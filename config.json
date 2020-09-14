@@ -1,0 +1,16 @@
+{
+	"params":
+	{
+		"local_server":"True",
+		"local_uri":"mysql://root:@localhost/twitter",
+		"prod_uri":"mysql://root:@localhost/twitter",
+		"fb_url":"https://facebook.com/twitter",
+		"tw_url":"https://twitter.com/twitter",
+		"git_url":"https://github.com/twitter",
+		"blog_name":"twitter",
+		"login_image":"login.jpeg",
+		"gmail_user":"demoproject58@gmail.com",
+		"gmail_password":"project@123"
+
+	}
+} 

@@ -1,0 +1,40 @@
+I am integrating our post composer tool with twitter to publish
+curated content from our website to our twitter user profile.we
+are going to deliver our account to our own twiter account.our
+website will only use for tweet on twitter.
+
+yes i am planing to perform exploratory data analysis, like our 
+content deliver to own twitter account.
+
+yes our app is use to tweet our website content on twitter account
+from our website by post composer tool.
+
+yes i may end up displaying data about twitter contents will be
+displayed online on our website by tool.
+
+yes our product service or analysis make twitter content or derived
+information available to a goverment entity.
+
+
+project decription:
+
+This App provide information about tech related such as mobile information
+android application, social media,website tools, latest tips and tricks.
+
+
+
+This app will use to tweets our online website content on our twiter account
+using composer post tool
+
+kafka
+====
+zookeeper-server-start.bat ../../config/zookeeper.properties
+kafka-server-start.bat ../../config/server.properties
+kafka-topics.bat --zookeeper localhost:2181 --topic twitterdata1 --create --partitions 1 --replication-factor 1
+kafka-console-consumer.bat --boostrap-server localhost:9092 --topic twitterdata1 --from-beginning
+
+cd:window:bin
+
+
+JAVA DOWNLOAD
+PYKAFKA DOWNLOAD

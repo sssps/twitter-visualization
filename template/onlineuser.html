@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+  {% block body %}
+    <!--sidebar end-->
+
+    <!--main content start-->
+    
+    <section id="main-content">
+      <section class="wrapper">
+        <!--overview start-->
+
+        <div class="row">
+          <div class="col-lg-12">
+            <h3 class="page-header"><i class="fa fa-laptop"></i> Dashboard</h3>
+            <ol class="breadcrumb">
+              <li><i class="fa fa-home"></i><a href="/dashboard">Home</a></li>
+              <li><i class="fa fa-laptop"></i>Dashboard</li>
+            </ol>
+          </div>
+        </div>
+
+        
+       
+        <!--/.row-->
+
+
+        <div class="row">
+          <div class="col-lg-9 col-md-12">
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h2><i class="fa fa-map-marker red"></i><strong>Countries</strong></h2>
+                <div class="panel-actions">
+                  <a href="index.html#" class="btn-setting"><i class="fa fa-rotate-right"></i></a>
+                  <a href="index.html#" class="btn-minimize"><i class="fa fa-chevron-up"></i></a>
+                  <a href="index.html#" class="btn-close"><i class="fa fa-times"></i></a>
+                </div>
+              </div>
+              <div class="panel-body-map">
+
+               <div id="mapid" style="width: 1200px; height: 400px; position: relative; outline: none;" class="leaflet-container leaflet-fade-anim leaflet-grab leaflet-touch-drag" tabindex="0">
+                <script src="{{url_for('static', filename='js/leaf.js') }}"></script>
+              </div>
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Live Live Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+   Make sure you put this AFTER Leaflet's CSS
+  <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+  </head>
+  <body>
+    <h1>Twitter World Map</h1>
+    <div id="mapid" style="width:900px; height:580px;"></div>
+      <script src="../static/js/leaf.js"></script>
+  </body>
+</html>
+  -->
+            </div>
+          </div>
+          <div class="col-md-3">
+            <!-- List starts -->
+           
+          </div>
+
+
+        </div>
+
+
+        <!-- Today status end -->
+
+
+
+        
+        <!-- project team & activity end -->
+
+    
+{% endblock %}
